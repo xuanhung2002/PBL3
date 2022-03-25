@@ -33,22 +33,25 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.TabControlNguyenLieu = new System.Windows.Forms.TabControl();
             this.tabTonKhoNguyenLieu = new System.Windows.Forms.TabPage();
-            this.tabNhatKyNhapKho = new System.Windows.Forms.TabPage();
-            this.tabNhatKyXuatKho = new System.Windows.Forms.TabPage();
             this.dgvTonKhoNguyenLieu = new System.Windows.Forms.DataGridView();
+            this.tabNhatKyNhapKho = new System.Windows.Forms.TabPage();
             this.dgvNhatKyNhapKho = new System.Windows.Forms.DataGridView();
+            this.tabNhatKyXuatKho = new System.Windows.Forms.TabPage();
             this.dgvNhatKyXuatKho = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.TabControlNguyenLieu.SuspendLayout();
             this.tabTonKhoNguyenLieu.SuspendLayout();
-            this.tabNhatKyNhapKho.SuspendLayout();
-            this.tabNhatKyXuatKho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTonKhoNguyenLieu)).BeginInit();
+            this.tabNhatKyNhapKho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhatKyNhapKho)).BeginInit();
+            this.tabNhatKyXuatKho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhatKyXuatKho)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -56,7 +59,6 @@
             this.groupBox1.Size = new System.Drawing.Size(1924, 290);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Xuất kho thanh lý";
             // 
             // contextMenuStrip1
             // 
@@ -89,28 +91,6 @@
             this.tabTonKhoNguyenLieu.Text = "Tồn kho nguyên liệu";
             this.tabTonKhoNguyenLieu.UseVisualStyleBackColor = true;
             // 
-            // tabNhatKyNhapKho
-            // 
-            this.tabNhatKyNhapKho.Controls.Add(this.dgvNhatKyNhapKho);
-            this.tabNhatKyNhapKho.Location = new System.Drawing.Point(4, 27);
-            this.tabNhatKyNhapKho.Name = "tabNhatKyNhapKho";
-            this.tabNhatKyNhapKho.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNhatKyNhapKho.Size = new System.Drawing.Size(1916, 734);
-            this.tabNhatKyNhapKho.TabIndex = 1;
-            this.tabNhatKyNhapKho.Text = "Nhật ký nhập kho";
-            this.tabNhatKyNhapKho.UseVisualStyleBackColor = true;
-            // 
-            // tabNhatKyXuatKho
-            // 
-            this.tabNhatKyXuatKho.Controls.Add(this.dgvNhatKyXuatKho);
-            this.tabNhatKyXuatKho.Location = new System.Drawing.Point(4, 27);
-            this.tabNhatKyXuatKho.Name = "tabNhatKyXuatKho";
-            this.tabNhatKyXuatKho.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNhatKyXuatKho.Size = new System.Drawing.Size(1916, 734);
-            this.tabNhatKyXuatKho.TabIndex = 2;
-            this.tabNhatKyXuatKho.Text = "Nhật ký xuất kho";
-            this.tabNhatKyXuatKho.UseVisualStyleBackColor = true;
-            // 
             // dgvTonKhoNguyenLieu
             // 
             this.dgvTonKhoNguyenLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -121,6 +101,17 @@
             this.dgvTonKhoNguyenLieu.RowTemplate.Height = 24;
             this.dgvTonKhoNguyenLieu.Size = new System.Drawing.Size(1910, 728);
             this.dgvTonKhoNguyenLieu.TabIndex = 0;
+            // 
+            // tabNhatKyNhapKho
+            // 
+            this.tabNhatKyNhapKho.Controls.Add(this.dgvNhatKyNhapKho);
+            this.tabNhatKyNhapKho.Location = new System.Drawing.Point(4, 27);
+            this.tabNhatKyNhapKho.Name = "tabNhatKyNhapKho";
+            this.tabNhatKyNhapKho.Padding = new System.Windows.Forms.Padding(3);
+            this.tabNhatKyNhapKho.Size = new System.Drawing.Size(1916, 734);
+            this.tabNhatKyNhapKho.TabIndex = 1;
+            this.tabNhatKyNhapKho.Text = "Nhật ký nhập kho";
+            this.tabNhatKyNhapKho.UseVisualStyleBackColor = true;
             // 
             // dgvNhatKyNhapKho
             // 
@@ -133,6 +124,17 @@
             this.dgvNhatKyNhapKho.Size = new System.Drawing.Size(1910, 728);
             this.dgvNhatKyNhapKho.TabIndex = 0;
             // 
+            // tabNhatKyXuatKho
+            // 
+            this.tabNhatKyXuatKho.Controls.Add(this.dgvNhatKyXuatKho);
+            this.tabNhatKyXuatKho.Location = new System.Drawing.Point(4, 27);
+            this.tabNhatKyXuatKho.Name = "tabNhatKyXuatKho";
+            this.tabNhatKyXuatKho.Padding = new System.Windows.Forms.Padding(3);
+            this.tabNhatKyXuatKho.Size = new System.Drawing.Size(1916, 734);
+            this.tabNhatKyXuatKho.TabIndex = 2;
+            this.tabNhatKyXuatKho.Text = "Nhật ký xuất kho";
+            this.tabNhatKyXuatKho.UseVisualStyleBackColor = true;
+            // 
             // dgvNhatKyXuatKho
             // 
             this.dgvNhatKyXuatKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -143,6 +145,15 @@
             this.dgvNhatKyXuatKho.RowTemplate.Height = 24;
             this.dgvNhatKyXuatKho.Size = new System.Drawing.Size(1910, 728);
             this.dgvNhatKyXuatKho.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(581, 155);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "hahahaha";
             // 
             // inventoryManageForm
             // 
@@ -155,12 +166,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inventoryManageForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.TabControlNguyenLieu.ResumeLayout(false);
             this.tabTonKhoNguyenLieu.ResumeLayout(false);
-            this.tabNhatKyNhapKho.ResumeLayout(false);
-            this.tabNhatKyXuatKho.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTonKhoNguyenLieu)).EndInit();
+            this.tabNhatKyNhapKho.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhatKyNhapKho)).EndInit();
+            this.tabNhatKyXuatKho.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhatKyXuatKho)).EndInit();
             this.ResumeLayout(false);
 
@@ -177,5 +190,6 @@
         private System.Windows.Forms.DataGridView dgvTonKhoNguyenLieu;
         private System.Windows.Forms.DataGridView dgvNhatKyNhapKho;
         private System.Windows.Forms.DataGridView dgvNhatKyXuatKho;
+        private System.Windows.Forms.Label label1;
     }
 }
