@@ -16,7 +16,7 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new inventoryManageForm());
+            Application.Run(new SalesStatistics());
         }
     }
 }

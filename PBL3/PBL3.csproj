@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +61,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesStatistics.Designer.cs">
+      <DependentUpon>SalesStatistics.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="inventoryManageForm.resx">
       <DependentUpon>inventoryManageForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +83,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SalesStatistics.resx">
+      <DependentUpon>SalesStatistics.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
