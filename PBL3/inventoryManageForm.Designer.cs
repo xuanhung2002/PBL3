@@ -38,8 +38,6 @@
             this.dgvNhatKyNhapKho = new System.Windows.Forms.DataGridView();
             this.tabNhatKyXuatKho = new System.Windows.Forms.TabPage();
             this.dgvNhatKyXuatKho = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
             this.TabControlNguyenLieu.SuspendLayout();
             this.tabTonKhoNguyenLieu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTonKhoNguyenLieu)).BeginInit();
@@ -51,7 +49,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -146,15 +143,6 @@
             this.dgvNhatKyXuatKho.Size = new System.Drawing.Size(1910, 728);
             this.dgvNhatKyXuatKho.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(581, 155);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "hahahaha";
-            // 
             // inventoryManageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -166,8 +154,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inventoryManageForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.TabControlNguyenLieu.ResumeLayout(false);
             this.tabTonKhoNguyenLieu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTonKhoNguyenLieu)).EndInit();
@@ -190,6 +176,5 @@
         private System.Windows.Forms.DataGridView dgvTonKhoNguyenLieu;
         private System.Windows.Forms.DataGridView dgvNhatKyNhapKho;
         private System.Windows.Forms.DataGridView dgvNhatKyXuatKho;
-        private System.Windows.Forms.Label label1;
     }
 }
