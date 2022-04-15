@@ -77,42 +77,50 @@ namespace PBL3
             Bitmap imgTick = new Bitmap(@"E:\GUI\Icon For GUI\ImgRed.jpg");
             Bitmap imgUnTick = new Bitmap(@"E:\GUI\Icon For GUI\ImgGreen.png");
             DataGridViewImageColumn[] imageCol = new DataGridViewImageColumn[14];
-            for(int i = 0; i < 14; i++)
+            DataGridViewButtonColumn button = new DataGridViewButtonColumn();
+            button.Text = "Sửa";
+            button.HeaderText = "";
+            button.Name = "btnSuaNV";
+            button.UseColumnTextForButtonValue = true;
+            for (int i = 0; i < 14; i++)
             {
                 imageCol[i] = new DataGridViewImageColumn();
-                imageCol[i].Width = 90;
+                imageCol[i].Width = 80;
             }
             dgvEmployee.Columns.Add("MNV","Mã nhân viên");
             dgvEmployee.Columns.Add("Name","Họ Và tên");
             dgvEmployee.Columns.Add(imageCol[0]);
-            dgvEmployee.Columns[1].HeaderText = "Thứ 2 sáng";
+            dgvEmployee.Columns[2].HeaderText = "Thứ 2 sáng";
             dgvEmployee.Columns.Add(imageCol[1]);
-            dgvEmployee.Columns[0].Width = 80;
-            dgvEmployee.Columns[2].HeaderText = "Thứ 2 chiều";            
+            dgvEmployee.Columns[3].HeaderText = "Thứ 2 chiều";            
             dgvEmployee.Columns.Add(imageCol[2]);
-            dgvEmployee.Columns[3].HeaderText = "Thứ 3 sáng";
+            dgvEmployee.Columns[4].HeaderText = "Thứ 3 sáng";
             dgvEmployee.Columns.Add(imageCol[3]);
-            dgvEmployee.Columns[4].HeaderText = "Thứ 3 chiều";
+            dgvEmployee.Columns[5].HeaderText = "Thứ 3 chiều";
             dgvEmployee.Columns.Add(imageCol[4]);
-            dgvEmployee.Columns[5].HeaderText = "Thứ 4 sáng";
+            dgvEmployee.Columns[6].HeaderText = "Thứ 4 sáng";
             dgvEmployee.Columns.Add(imageCol[5]);
-            dgvEmployee.Columns[6].HeaderText = "Thứ 4 chiều";
+            dgvEmployee.Columns[7].HeaderText = "Thứ 4 chiều";
             dgvEmployee.Columns.Add(imageCol[6]);
-            dgvEmployee.Columns[7].HeaderText = "Thứ 5 sáng";
+            dgvEmployee.Columns[8].HeaderText = "Thứ 5 sáng";
             dgvEmployee.Columns.Add(imageCol[7]);
-            dgvEmployee.Columns[8].HeaderText = "Thứ 5 chiều";
+            dgvEmployee.Columns[9].HeaderText = "Thứ 5 chiều";
             dgvEmployee.Columns.Add(imageCol[8]);
-            dgvEmployee.Columns[9].HeaderText = "Thứ 6 sáng";
+            dgvEmployee.Columns[10].HeaderText = "Thứ 6 sáng";
             dgvEmployee.Columns.Add(imageCol[9]);
-            dgvEmployee.Columns[10].HeaderText = "Thứ 6 chiều";
+            dgvEmployee.Columns[11].HeaderText = "Thứ 6 chiều";
             dgvEmployee.Columns.Add(imageCol[10]);
-            dgvEmployee.Columns[11].HeaderText = "Thứ 7 sáng";
+            dgvEmployee.Columns[12].HeaderText = "Thứ 7 sáng";
             dgvEmployee.Columns.Add(imageCol[11]);
-            dgvEmployee.Columns[12].HeaderText = "Thứ 7 chiều";
+            dgvEmployee.Columns[13].HeaderText = "Thứ 7 chiều";
             dgvEmployee.Columns.Add(imageCol[12]);
-            dgvEmployee.Columns[13].HeaderText = "Chủ nhật sáng";
+            dgvEmployee.Columns[14].HeaderText = "Chủ nhật sáng";
             dgvEmployee.Columns.Add(imageCol[13]);
-            dgvEmployee.Columns[14].HeaderText = "Chủ nhật chiều";
+            dgvEmployee.Columns[15].HeaderText = "Chủ nhật chiều";
+            dgvEmployee.Columns.Add(button);
+            dgvEmployee.Columns[0].Width = 40;
+            dgvEmployee.Columns[1].Width = 100;
+            
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 dgvEmployee.Rows.Add();
@@ -135,25 +143,34 @@ namespace PBL3
         {
             DateTime now = new DateTime();
             now =DateTime.Now;
-            now;
+            
             lbDayAfter.Text = now.ToString();
             lbDayBefore.Text = now.ToString();
         }
-
+        private void btnSuaNV_Click(object sender,EventArgs e)
+        {
+            
+        }
         private void btnShowDSNV_Click(object sender, EventArgs e)
         {
             dgvEmployee.Show();
-            
         }
-
         private void btnThemNV_Click(object sender, EventArgs e)
         {
             
         }
-
         private void btnDoicalam_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex==16)
+            {
+                DetailEmployee detail= new DetailEmployee();
+                detail.Show();
+            }
         }
     }
 }

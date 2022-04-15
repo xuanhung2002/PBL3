@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.btnDoicalam = new System.Windows.Forms.Button();
             this.btnXoaNV = new System.Windows.Forms.Button();
             this.btnThemNV = new System.Windows.Forms.Button();
             this.btnShowDSNV = new System.Windows.Forms.Button();
-            this.lbDayBefore = new System.Windows.Forms.Label();
-            this.lbDayAfter = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn3week = new System.Windows.Forms.Button();
+            this.btn2week = new System.Windows.Forms.Button();
             this.btn1week = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbDayAfter = new System.Windows.Forms.Label();
+            this.lbDayBefore = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -61,56 +61,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 1033);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(87)))));
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btn1week);
-            this.panel2.Controls.Add(this.lbDayAfter);
-            this.panel2.Controls.Add(this.lbDayBefore);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(199, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1703, 100);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Location = new System.Drawing.Point(0, 106);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1703, 436);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(87)))));
-            this.panel4.Controls.Add(this.dgvEmployee);
-            this.panel4.Location = new System.Drawing.Point(199, 100);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1703, 933);
-            this.panel4.TabIndex = 2;
-            // 
-            // dgvEmployee
-            // 
-            this.dgvEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployee.Location = new System.Drawing.Point(0, 0);
-            this.dgvEmployee.Name = "dgvEmployee";
-            this.dgvEmployee.ReadOnly = true;
-            this.dgvEmployee.RowHeadersWidth = 51;
-            this.dgvEmployee.RowTemplate.Height = 24;
-            this.dgvEmployee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEmployee.Size = new System.Drawing.Size(1703, 933);
-            this.dgvEmployee.TabIndex = 0;
             // 
             // btnDoicalam
             // 
@@ -165,19 +115,54 @@
             this.btnShowDSNV.UseVisualStyleBackColor = false;
             this.btnShowDSNV.Click += new System.EventHandler(this.btnShowDSNV_Click);
             // 
-            // lbDayBefore
+            // panel2
             // 
-            this.lbDayBefore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbDayBefore.AutoSize = true;
-            this.lbDayBefore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDayBefore.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDayBefore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(148)))), ((int)(((byte)(244)))));
-            this.lbDayBefore.Location = new System.Drawing.Point(836, 31);
-            this.lbDayBefore.Name = "lbDayBefore";
-            this.lbDayBefore.Size = new System.Drawing.Size(106, 34);
-            this.lbDayBefore.TabIndex = 3;
-            this.lbDayBefore.Text = "lb-7day";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(87)))));
+            this.panel2.Controls.Add(this.btn3week);
+            this.panel2.Controls.Add(this.btn2week);
+            this.panel2.Controls.Add(this.btn1week);
+            this.panel2.Controls.Add(this.lbDayAfter);
+            this.panel2.Controls.Add(this.lbDayBefore);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Location = new System.Drawing.Point(199, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1703, 100);
+            this.panel2.TabIndex = 1;
+            // 
+            // btn3week
+            // 
+            this.btn3week.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn3week.Location = new System.Drawing.Point(1169, 12);
+            this.btn3week.Name = "btn3week";
+            this.btn3week.Size = new System.Drawing.Size(170, 69);
+            this.btn3week.TabIndex = 7;
+            this.btn3week.Text = "3 Tuần trước";
+            this.btn3week.UseVisualStyleBackColor = true;
+            // 
+            // btn2week
+            // 
+            this.btn2week.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn2week.Location = new System.Drawing.Point(1345, 12);
+            this.btn2week.Name = "btn2week";
+            this.btn2week.Size = new System.Drawing.Size(170, 69);
+            this.btn2week.TabIndex = 6;
+            this.btn2week.Text = "2 Tuần trước";
+            this.btn2week.UseVisualStyleBackColor = true;
+            // 
+            // btn1week
+            // 
+            this.btn1week.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn1week.Location = new System.Drawing.Point(1521, 12);
+            this.btn1week.Name = "btn1week";
+            this.btn1week.Size = new System.Drawing.Size(170, 69);
+            this.btn1week.TabIndex = 5;
+            this.btn1week.Text = "1 Tuần trước";
+            this.btn1week.UseVisualStyleBackColor = true;
             // 
             // lbDayAfter
             // 
@@ -193,38 +178,54 @@
             this.lbDayAfter.TabIndex = 4;
             this.lbDayAfter.Text = "lb-7day";
             // 
-            // btn1week
+            // lbDayBefore
             // 
-            this.btn1week.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lbDayBefore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn1week.Location = new System.Drawing.Point(1521, 12);
-            this.btn1week.Name = "btn1week";
-            this.btn1week.Size = new System.Drawing.Size(170, 69);
-            this.btn1week.TabIndex = 5;
-            this.btn1week.Text = "1 Tuần trước";
-            this.btn1week.UseVisualStyleBackColor = true;
+            this.lbDayBefore.AutoSize = true;
+            this.lbDayBefore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDayBefore.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDayBefore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(148)))), ((int)(((byte)(244)))));
+            this.lbDayBefore.Location = new System.Drawing.Point(780, 31);
+            this.lbDayBefore.Name = "lbDayBefore";
+            this.lbDayBefore.Size = new System.Drawing.Size(106, 34);
+            this.lbDayBefore.TabIndex = 3;
+            this.lbDayBefore.Text = "lb-7day";
             // 
-            // button1
+            // panel3
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1345, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 69);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "2 Tuần trước";
-            this.button1.UseVisualStyleBackColor = true;
+            this.panel3.Location = new System.Drawing.Point(0, 106);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1703, 436);
+            this.panel3.TabIndex = 2;
             // 
-            // button2
+            // panel4
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1169, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 69);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "3 Tuần trước";
-            this.button2.UseVisualStyleBackColor = true;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(87)))));
+            this.panel4.Controls.Add(this.dgvEmployee);
+            this.panel4.Location = new System.Drawing.Point(199, 100);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1703, 933);
+            this.panel4.TabIndex = 2;
+            // 
+            // dgvEmployee
+            // 
+            this.dgvEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Location = new System.Drawing.Point(0, 0);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.ReadOnly = true;
+            this.dgvEmployee.RowHeadersWidth = 51;
+            this.dgvEmployee.RowTemplate.Height = 24;
+            this.dgvEmployee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmployee.Size = new System.Drawing.Size(1703, 933);
+            this.dgvEmployee.TabIndex = 0;
+            this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
             // 
             // EmployeeManager
             // 
@@ -257,8 +258,8 @@
         private System.Windows.Forms.Button btnXoaNV;
         private System.Windows.Forms.DataGridView dgvEmployee;
         private System.Windows.Forms.Button btnDoicalam;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn3week;
+        private System.Windows.Forms.Button btn2week;
         private System.Windows.Forms.Button btn1week;
         private System.Windows.Forms.Label lbDayAfter;
         private System.Windows.Forms.Label lbDayBefore;
