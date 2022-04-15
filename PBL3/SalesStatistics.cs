@@ -15,6 +15,7 @@ namespace PBL3
         public SalesStatistics()
         {
             InitializeComponent();
+            //ShowDateTimeCustom();
         }
         private Button CurrentButton;
         private void SetUIForButton(object button)
@@ -33,7 +34,10 @@ namespace PBL3
             }
             CurrentButton = btn;
         }
-
+        private void ShowDateTimeCustom()
+        {
+            lblDateCustom.Text = dateTimePicker2.Value.ToString();
+        }
         private void btn7day_Click(object sender, EventArgs e)
         {
             SetUIForButton(sender);
@@ -56,6 +60,7 @@ namespace PBL3
 
         private void btnCustomOK_Click(object sender, EventArgs e)
         {
+            ShowDateTimeCustom();
             SetUIForButton(sender);
         }
     }

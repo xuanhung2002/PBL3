@@ -47,6 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeManager.Designer.cs">
+      <DependentUpon>EmployeeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoEmployee.cs" />
     <Compile Include="inventoryManageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +74,9 @@
     <Compile Include="SalesStatistics.Designer.cs">
       <DependentUpon>SalesStatistics.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EmployeeManager.resx">
+      <DependentUpon>EmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inventoryManageForm.resx">
       <DependentUpon>inventoryManageForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +111,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-group-man-man-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-denied-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
