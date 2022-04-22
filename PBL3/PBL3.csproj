@@ -79,11 +79,22 @@
     <Compile Include="loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuColorTable.cs" />
+    <Compile Include="MenuRenderer.cs" />
     <Compile Include="PasswordBackup.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PasswordBackup.Designer.cs">
       <DependentUpon>PasswordBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PBLCustomDropDownMenu.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordBackup.resx">
       <DependentUpon>PasswordBackup.cs</DependentUpon>
@@ -178,6 +192,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-reset-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-border-style-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-loading-bar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-content-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-content-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-person-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-product-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ask-question-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-stocks-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cloud-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cloud-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
