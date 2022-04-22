@@ -63,5 +63,15 @@ namespace PBL3
             ShowDateTimeCustom();
             SetUIForButton(sender);
         }
+
+        private void SalesStatistics_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

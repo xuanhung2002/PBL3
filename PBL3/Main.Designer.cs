@@ -37,7 +37,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnSaoLuu = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDoanhThu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -68,7 +68,7 @@
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(1902, 100);
+            this.pnTop.Size = new System.Drawing.Size(1902, 94);
             this.pnTop.TabIndex = 0;
             // 
             // lblHeaderTextLogo
@@ -94,9 +94,9 @@
             this.pnButton.Controls.Add(this.panel5);
             this.pnButton.Controls.Add(this.panel4);
             this.pnButton.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnButton.Location = new System.Drawing.Point(0, 100);
+            this.pnButton.Location = new System.Drawing.Point(0, 94);
             this.pnButton.Name = "pnButton";
-            this.pnButton.Size = new System.Drawing.Size(200, 933);
+            this.pnButton.Size = new System.Drawing.Size(200, 939);
             this.pnButton.TabIndex = 1;
             // 
             // panel8
@@ -153,27 +153,28 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btnThongKe);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 400);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 80);
             this.panel3.TabIndex = 5;
             // 
-            // button1
+            // btnThongKe
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::PBL3.Properties.Resources.icons8_stocks_32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 80);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Thống kê";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThongKe.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.Image = global::PBL3.Properties.Resources.icons8_stocks_32;
+            this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.Location = new System.Drawing.Point(0, 0);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(200, 80);
+            this.btnThongKe.TabIndex = 4;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // panel2
             // 
@@ -305,9 +306,9 @@
             // pnIsMDI
             // 
             this.pnIsMDI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnIsMDI.Location = new System.Drawing.Point(200, 100);
+            this.pnIsMDI.Location = new System.Drawing.Point(200, 94);
             this.pnIsMDI.Name = "pnIsMDI";
-            this.pnIsMDI.Size = new System.Drawing.Size(1702, 933);
+            this.pnIsMDI.Size = new System.Drawing.Size(1702, 939);
             this.pnIsMDI.TabIndex = 3;
             // 
             // Main
@@ -360,7 +361,7 @@
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btnKho;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btnSaoLuu;
     }

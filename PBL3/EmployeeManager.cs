@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace PBL3
 {
@@ -41,8 +42,8 @@ namespace PBL3
         
         void CreateDemoEmployee()
         {
-            dgvEmployee.Width = 1700;
-            dgvEmployee.Height = 930;
+            //dgvEmployee.Width = 1700;
+            //dgvEmployee.Height = 930;
             dt.Columns.Add("MNV", typeof(string));
             dt.Columns.Add("NameNV", typeof(string));
             dt.Columns.Add("T2S", typeof(Boolean));
@@ -85,7 +86,7 @@ namespace PBL3
             for (int i = 0; i < 14; i++)
             {
                 imageCol[i] = new DataGridViewImageColumn();
-                imageCol[i].Width = 80;
+                imageCol[i].Width = 70;
             }
             dgvEmployee.Columns.Add("MNV","Mã nhân viên");
             dgvEmployee.Columns.Add("Name","Họ Và tên");
@@ -141,11 +142,14 @@ namespace PBL3
         }
         void GUI()
         {
+            CultureInfo viVn = new CultureInfo("vi-VN");
             DateTime now = new DateTime();
-            now =DateTime.Now;
-            
-            lbDayAfter.Text = now.ToString();
-            lbDayBefore.Text = now.ToString();
+            now= DateTime.Now;
+            string now_Format = now.ToString("d");
+            DateTime last = now.AddDays(-7);
+            string last_Format = last.ToString("d");
+            lbDayAfter.Text = now.ToString("d",viVn);
+            lbDayBefore.Text = last.ToString("d", viVn);
         }
         private void btnSuaNV_Click(object sender,EventArgs e)
         {
@@ -157,7 +161,8 @@ namespace PBL3
         }
         private void btnThemNV_Click(object sender, EventArgs e)
         {
-            
+            DetailEmployee DetailemployeeForm = new DetailEmployee();
+            DetailemployeeForm.Show();
         }
         private void btnDoicalam_Click(object sender, EventArgs e)
         {

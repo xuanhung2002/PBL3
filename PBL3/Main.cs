@@ -35,14 +35,17 @@ namespace PBL3
         EmployeeManager EmployeeForm = new EmployeeManager();
         inventoryManageForm InventorymanagerForm = new inventoryManageForm();
         DataBackup DatabackupForm = new DataBackup();
+        SalesStatistics SalestatisticsForm = new SalesStatistics();
         private void Main_Load(object sender, EventArgs e)
         {
             SetupForm(EmployeeForm);
             SetupForm(InventorymanagerForm);
             SetupForm(DatabackupForm);
+            SetupForm(SalestatisticsForm);
             pnIsMDI.Controls.Add(EmployeeForm);
             pnIsMDI.Controls.Add(InventorymanagerForm);
             pnIsMDI.Controls.Add(DatabackupForm);
+            pnIsMDI.Controls.Add(SalestatisticsForm);
         }
         private void SetupForm(Form form)
         {
@@ -78,6 +81,12 @@ namespace PBL3
             SetUIForButton(btnSaoLuu);
             
             DatabackupForm.Show();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            SetUIForButton(btnThongKe);
+            SalestatisticsForm.Show();
         }
 
         

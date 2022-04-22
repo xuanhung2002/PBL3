@@ -168,7 +168,7 @@
             this.lbDayAfter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbDayAfter.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDayAfter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(148)))), ((int)(((byte)(244)))));
-            this.lbDayAfter.Location = new System.Drawing.Point(1210, 31);
+            this.lbDayAfter.Location = new System.Drawing.Point(1193, 31);
             this.lbDayAfter.Name = "lbDayAfter";
             this.lbDayAfter.Size = new System.Drawing.Size(106, 34);
             this.lbDayAfter.TabIndex = 4;
@@ -182,7 +182,7 @@
             this.lbDayBefore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbDayBefore.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDayBefore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(148)))), ((int)(((byte)(244)))));
-            this.lbDayBefore.Location = new System.Drawing.Point(979, 31);
+            this.lbDayBefore.Location = new System.Drawing.Point(996, 31);
             this.lbDayBefore.Name = "lbDayBefore";
             this.lbDayBefore.Size = new System.Drawing.Size(106, 34);
             this.lbDayBefore.TabIndex = 3;
