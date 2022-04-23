@@ -60,6 +60,9 @@
     <Compile Include="DetailEmployee.Designer.cs">
       <DependentUpon>DetailEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="ElipseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="EmployeeManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +90,12 @@
     </Compile>
     <Compile Include="MenuColorTable.cs" />
     <Compile Include="MenuRenderer.cs" />
+    <Compile Include="OverView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverView.Designer.cs">
+      <DependentUpon>OverView.cs</DependentUpon>
+    </Compile>
     <Compile Include="PasswordBackup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,11 +107,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="SalesStatistics.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SalesStatistics.Designer.cs">
       <DependentUpon>SalesStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupportForUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupportForUsers.Designer.cs">
+      <DependentUpon>SupportForUsers.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="DataBackup.resx">
       <DependentUpon>DataBackup.cs</DependentUpon>
@@ -121,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverView.resx">
+      <DependentUpon>OverView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordBackup.resx">
       <DependentUpon>PasswordBackup.cs</DependentUpon>
@@ -225,6 +249,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-cloud-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-noodles-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waiter-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waiter-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cook-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sales-performance-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sales-performance-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-request-money-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tax-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paper-money-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
